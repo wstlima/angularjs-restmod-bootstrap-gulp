@@ -13,4 +13,4 @@ https://github.com/wstlima/dropwizard-mysql-rest
 O back end deve estar rodando, clone o projeto na raiz do seu diretório web e navegue até http: //localhost 
 ## Build 
 *  Rode `npm i` para fazer o download dos módulos node.js. 
-* Rode `gulp` para rodar o script do gulp e assim processar os arquivos para deploy. 
+* Rode `gulp` para rodar o script do gulp e assim processar os arquivos para a pasta dist. 
