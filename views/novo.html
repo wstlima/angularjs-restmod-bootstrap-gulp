@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <h3>{{ title }}</h3>
+            <hr>
+        </div>
+    </div>
+    <div class="login-form">
+        <div class="main-div">
+
+            <form #produtoForm="ngForm" ng-submit="submit(produto)">
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nome" required required ng-model="produto.nome"
+                        name="nome">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Código de Barras" required required ng-model="produto.codbarras"
+                        name="codbarras">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Descrição" required ng-model="produto.descricao"
+                        name="descricao">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" placeholder="Quantidade" required ng-model="produto.quantidade"
+                        name="quantidade">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Categoria" required ng-model="produto.categoria"
+                        name="categoria">
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6 text-center">
+                        <a class='btn btn-warning' href="/#!/produtos"><span class="glyphicon glyphicon-edit"></span>
+                            CANCELAR</a>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span>
+                            SALVAR</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
